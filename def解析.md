@@ -1,10 +1,10 @@
-可以，把这一句拆开讲清楚：
+如何完整的理解def函数？
 
 ```python
 def twoSum(self, nums: List[int], target: int) -> List[int]:
 ```
 
-这里面的 `: List[int]`、`: int`、`-> List[int]` 都叫 **类型注解（type hints）/ 类型提示**。它们**不是语法必须**（在大多数力扣 Python 环境里），主要是“给人和编辑器看的”。
+这里面的 `: List[int]`、`: int`、`-> List[int]` 都叫 **类型注解（type hints）/ 类型提示**。它们**不是语法必须**（在大多数力扣 Python 环境里），主要是“给编辑器看的”。
 
 ---
 
@@ -27,7 +27,7 @@ def twoSum(self, nums: List[int], target: int) -> List[int]:
 
 * `target` 这个参数，建议它是 `int`（整数）
 
-✅ 这只是“提示”，Python 运行时一般**不会强制检查**你是不是传了正确类型。
+✅ 这只是“提示”，Python 运行时一般**不会强制检查**是不是传了正确类型。
 
 ### 能删除吗？
 
@@ -98,5 +98,3 @@ def twoSum(self, nums, target):
 * `nums: List[int]`、`target: int`：**参数类型提示**，可删
 * `-> List[int]`：**返回类型提示**，可删
 * 这些注解 **不影响算法本身**，只是让代码更清晰
-
-如果你想，我可以把“完全不带类型注解”的版本给你，并继续逐字符解释每一部分。

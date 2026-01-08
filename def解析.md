@@ -93,6 +93,14 @@ def twoSum(self, nums, target):
 
 ---
 
+## 6）为何 target后面不写 target: List[int]？因为 target 不是列表，它是一个单独的整数。题目原话是：
+
+给定一个整数数组 nums 和一个整数目标值 target，所以类型提示应该是：
+
+nums: List[int] ✅（整数列表）
+
+target: int ✅（一个整数）
+
 ## 结论（最实用的）
 
 * `nums: List[int]`、`target: int`：**参数类型提示**，可删

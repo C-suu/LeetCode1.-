@@ -79,7 +79,7 @@ def twoSum(self, nums: List[int], target: int) -> List[int]:
 * `twoSum`：函数名字
 * `( ... )`：括号里是参数
 * `self`：类里的函数都会带它，先当成“固定写法”。注意，self并不总是出现在def里面。类外部的不需要self，可以参考离线IQL的期望回归写法。
-```
+```python
 def expectile_loss(diff, expectile=0.7):  # IQL的期望回归，一般定义在IQL的类外部，无需self
     weight = torch.where(diff > 0, expectile, (1 - expectile))
     return weight * (diff**2)

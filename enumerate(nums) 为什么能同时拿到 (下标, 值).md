@@ -6,7 +6,7 @@ for i, x in enumerate(nums):
 
 * `enumerate(...)` 是 Python 内置函数
 * 它的作用：给 `nums` 里的每个元素自动配上编号（从 0 开始）
-* \url{https://www.runoob.com/python/python-func-enumerate.html}
+* https://www.runoob.com/python/python-func-enumerate.html
 
 ---
 
